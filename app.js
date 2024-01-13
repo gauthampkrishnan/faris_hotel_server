@@ -304,7 +304,6 @@ app.post("/send-email", async (req, res) => {
       subject: "Order Confirmation",
       text: formatOrderDetails(orderData),
       html: `
-            <h1>Order Confirmation</h1>
             <h2>Order Details:</h2>
             <p>Name: ${orderData.name || "N/A"}</p>
             <p>Email: ${orderData.email || "N/A"}</p>
