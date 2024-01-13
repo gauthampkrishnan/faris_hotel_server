@@ -295,7 +295,7 @@ app.post("/send-email", async (req, res) => {
     .text(orderData.Total.toFixed(2), 0, yPosition + 60, { align: "right" });
 
   pdfDoc.end();
-
+console.log("I am here")
   try {
     await finished(fileStream);
     let mailOptions = {
